@@ -265,9 +265,11 @@ def menu_cycle():
                 working = False
                 print("\nGracias por utilizar el programa.")
     sys.exit(0)
+    
 
 
 # main del ejercicio
 if __name__ == "__main__":
     # TODO modificar main para actualizar el límite de recursion de memoria (parte 2)
+    sys.setrecursionlimit(default_limit*1000000)
     menu_cycle()
